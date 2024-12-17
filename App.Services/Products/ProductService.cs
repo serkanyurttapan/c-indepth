@@ -10,4 +10,9 @@ public class ProductService : IProductService
     {
         _productRepository = productRepository;
     }
+    public async Task<IEnumerable<Product>> GetTopSellerProductsAsync(int count)
+    {
+        return await _productRepository.GetTopSellerProductsAsync(count);
+    }
+    
 }
