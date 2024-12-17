@@ -1,0 +1,14 @@
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/Examples/bin/Debug/net8.0/Examples
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/Examples/bin/Debug/net8.0/Examples.deps.json
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/Examples/bin/Debug/net8.0/Examples.runtimeconfig.json
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/Examples/bin/Debug/net8.0/Examples.dll
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/Examples/bin/Debug/net8.0/Examples.pdb
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/Examples/obj/Debug/net8.0/Examples.GeneratedMSBuildEditorConfig.editorconfig
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/Examples/obj/Debug/net8.0/Examples.AssemblyInfoInputs.cache
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/Examples/obj/Debug/net8.0/Examples.AssemblyInfo.cs
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/Examples/obj/Debug/net8.0/Examples.csproj.CoreCompileInputs.cache
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/Examples/obj/Debug/net8.0/Examples.dll
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/Examples/obj/Debug/net8.0/refint/Examples.dll
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/Examples/obj/Debug/net8.0/Examples.pdb
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/Examples/obj/Debug/net8.0/Examples.genruntimeconfig.cache
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/Examples/obj/Debug/net8.0/ref/Examples.dll

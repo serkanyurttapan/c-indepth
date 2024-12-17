@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "fkTIvRC1boH8OZtRt1O83Bb3KRFfDeTP1rzND+kRm9bpcABCYaVN5+cHG7+8yT1di8MnTXMsYDRpFn1Qq3uzOw==",
+  "success": true,
+  "projectFilePath": "/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/ConsoleApp2/ConsoleApp2.csproj",
+  "expectedPackageFiles": [
+    "/Users/serkan.yurttapan/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/serkan.yurttapan/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/serkan.yurttapan/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.36/microsoft.netcore.app.host.osx-arm64.6.0.36.nupkg.sha512"
+  ],
+  "logs": []
+}
