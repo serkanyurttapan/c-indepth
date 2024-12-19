@@ -12,3 +12,4 @@
 /Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.Repositories/obj/Debug/net8.0/App.Repositories.pdb
 /Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.Repositories/obj/Debug/net8.0/App.Repositories.genruntimeconfig.cache
 /Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.Repositories/obj/Debug/net8.0/ref/App.Repositories.dll
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.Repositories/obj/Debug/net8.0/App.Repositories.sourcelink.json

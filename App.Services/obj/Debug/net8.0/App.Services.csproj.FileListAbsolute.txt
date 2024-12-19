@@ -13,3 +13,4 @@
 /Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.Services/obj/Debug/net8.0/refint/App.Services.dll
 /Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.Services/obj/Debug/net8.0/App.Services.pdb
 /Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.Services/obj/Debug/net8.0/ref/App.Services.dll
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.Services/obj/Debug/net8.0/App.Services.sourcelink.json
