@@ -71,4 +71,15 @@ public class ProductService : IProductService
         
         return ServiceResult.SuccessNoContent(HttpStatusCode.NoContent);
     }
+    public async Task<ServiceResult> DeleteProductAsync(int id)
+    {
+        var product = await _productRepository.GetByIdAsync(id);
+        if (product is null)
+            return ServiceResult.FailNoContent("Product not found", HttpStatusCode.NotFound);
+        
+        _productRepository.Delete(product);
+        await _unitOfWork.SaveChangesAsync();
+        
+        return ServiceResult.SuccessNoContent();
+    }
 }
