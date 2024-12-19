@@ -21,7 +21,8 @@ public class Program
    }
     public static void Main()
     {
-        var file = new DosyaIndirme();
-        file.Indir("tes",IndirmeSonrasiMesaj);
+        MMPSIntegration.getPaid().GetAwaiter().GetResult();
+        // var file = new DosyaIndirme();
+        // file.Indir("tes",IndirmeSonrasiMesaj);
     }
 }

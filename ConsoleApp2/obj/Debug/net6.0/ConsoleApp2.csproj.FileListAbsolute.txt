@@ -12,3 +12,4 @@
 /Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/ConsoleApp2/obj/Debug/net6.0/ConsoleApp2.pdb
 /Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/ConsoleApp2/obj/Debug/net6.0/ConsoleApp2.genruntimeconfig.cache
 /Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/ConsoleApp2/obj/Debug/net6.0/ref/ConsoleApp2.dll
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/ConsoleApp2/obj/Debug/net6.0/ConsoleApp2.sourcelink.json
