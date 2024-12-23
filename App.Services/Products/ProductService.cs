@@ -37,7 +37,7 @@ public class ProductService : IProductService
             ProductName = product.Name ?? string.Empty
         };
         
-        return ServiceResult<ProductDto>.Success(productDto, HttpStatusCode.NotFound);
+        return ServiceResult<ProductDto>.Success(productDto);
     }
 
     public async Task<ServiceResult<CreateProductResponse>> CreateProductAsync(

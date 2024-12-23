@@ -20,4 +20,8 @@
       <ProjectReference Include="..\App.Services\App.Services.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="products\" />
+    </ItemGroup>
+
 </Project>
