@@ -30,5 +30,11 @@ public static class ProductsModule
             var result = await productService.DeleteProductAsync(id);
             return result;
         }).WithName("DeleteProduct");
+        
+        services.MapGet("/getpagedalllist/{pageNumber}/{pageSize}", async (IProductService productService, int pageNumber, int pageSize) =>
+        {
+            var result = await productService.GetPaggedAllListAsync(pageNumber, pageSize);
+            return result;
+        }).WithName("GetPaggedAllList");
     }
 }

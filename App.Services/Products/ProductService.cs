@@ -1,4 +1,5 @@
 using System.Net;
+using Microsoft.EntityFrameworkCore;
 using Repositories;
 using Repositories.Products;
 
@@ -81,5 +82,17 @@ public class ProductService : IProductService
         await _unitOfWork.SaveChangesAsync();
         
         return ServiceResult.SuccessNoContent();
+    }
+
+    public async Task<ServiceResult<IEnumerable<ProductDto>>> GetPaggedAllListAsync(int pageNumber,int pageSize)
+    {
+        var size = (pageNumber - 1) * pageSize; 
+         var productList= await _productRepository.GetAll().Skip(size).Take(pageSize).ToListAsync();
+        var productListDto= (productList.Select(product => new ProductDto()
+         {
+             Id = product.Id,
+             ProductName = product.Name ?? string.Empty,
+         }));
+        return  ServiceResult<IEnumerable<ProductDto>>.Success(productListDto);
     }
 }

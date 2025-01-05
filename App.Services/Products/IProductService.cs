@@ -9,4 +9,5 @@ public interface IProductService
 
     Task<ServiceResult> UpdateProductAsync(int id, UpdateProductRequest updateProductRequest);
     Task<ServiceResult> DeleteProductAsync(int id);
+    Task<ServiceResult<IEnumerable<ProductDto>>> GetPaggedAllListAsync(int pageNumber,int pageSize);
 }

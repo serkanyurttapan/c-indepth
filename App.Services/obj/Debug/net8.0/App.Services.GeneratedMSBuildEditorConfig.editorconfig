@@ -11,3 +11,5 @@ build_property.RootNamespace = Services
 build_property.ProjectDir = /Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.Services/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 

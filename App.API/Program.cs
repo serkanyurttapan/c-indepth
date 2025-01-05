@@ -42,13 +42,6 @@ app.MapGet("/weatherforecast", () =>
     })
     .WithName("GetWeatherForecast")
     .WithOpenApi();
-// app.MapGet("/getproductbyid/{id}", async (IProductService productService, int id) =>
-//     {
-//         var result = await productService.GetProductByIdAsync(id);
-//         return result;
-//     })
-//     .WithName("GetProductById")
-//     .WithOpenApi();
 ProductsModule.AddProductsModule(app);
 
 app.Run();
