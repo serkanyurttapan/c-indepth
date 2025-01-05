@@ -145,3 +145,6 @@
 /Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.API/bin/Debug/net8.0/App.API.staticwebassets.endpoints.json
 /Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.API/obj/Debug/net8.0/staticwebassets.build.endpoints.json
 /Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.API/obj/Debug/net8.0/staticwebassets/msbuild.App.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.API/bin/Debug/net8.0/FluentValidation.dll
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.API/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
+/Users/serkan.yurttapan/RiderProjects/UdemyCourse1512/App.API/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
