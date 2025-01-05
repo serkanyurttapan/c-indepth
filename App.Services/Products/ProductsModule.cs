@@ -7,7 +7,7 @@ public static class ProductsModule
 {
     public static void AddProductsModule(this IEndpointRouteBuilder services)
     {
-        services.MapGet("/getproductbyid/{id}", async (IProductService productService, int id) =>
+        services.MapGet("/getproductbyid/{id:int}", async (IProductService productService, int id) =>
         {
             var result = await productService.GetProductByIdAsync(id);
             return result;

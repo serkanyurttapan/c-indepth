@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Repositories;
 using Repositories.Extensions;
@@ -10,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddRepositories();
 builder.Services.AddServices();
+builder.Services.Configure<ApiBehaviorOptions>(x=>x.SuppressModelStateInvalidFilter = true);
 builder.Services.AddDbContext<AppDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlserverConnection")));
 var app = builder.Build();
