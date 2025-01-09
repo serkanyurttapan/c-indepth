@@ -1,10 +1,12 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 
 namespace Services.Products;
 
 public static class ProductsModule
-{
+{       
+    [Authorize]
     public static void AddProductsModule(this IEndpointRouteBuilder services)
     {
         services.MapGet("/getproductbyid/{id:int}", async (IProductService productService, int id) =>

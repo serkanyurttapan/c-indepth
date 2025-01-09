@@ -1,12 +1,15 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Repositories;
 using Repositories.Extensions;
+using Services;
 using Services.Extensions;
 using Services.Products;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllers(x=>x.Filters.Add<FluentValidationFilter>());
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddRepositories();
