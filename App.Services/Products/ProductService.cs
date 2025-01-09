@@ -1,7 +1,10 @@
 using System.Net;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Repositories;
 using Repositories.Products;
+using Services.Products.Create;
+using Services.Products.Update;
 
 namespace Services.Products;
 
@@ -9,22 +12,18 @@ public class ProductService : IProductService
 {
     private readonly IProductRepository _productRepository;
     private readonly IUnitOfWork _unitOfWork;
-
-    public ProductService(IProductRepository productRepository,IUnitOfWork unitOfWork)
+    private readonly IMapper _map;
+    public ProductService(IProductRepository productRepository,IUnitOfWork unitOfWork,IMapper map)
     {
         _productRepository = productRepository;
         _unitOfWork = unitOfWork;
+        _map = map;
     }
     public async Task<ServiceResult<IEnumerable<ProductDto>>> GetTopSellerProductsAsync(int count)
     {
         var productList = await _productRepository.GetTopSellerProductsAsync(count);
-        
-        var productDtoList = productList.Select(product => new ProductDto
-        {
-            Id = product.Id,
-            ProductName = product.Name ?? string.Empty
-        });
-        return new ServiceResult<IEnumerable<ProductDto>>() { Data = productDtoList };
+        var result= _map.Map<IEnumerable<Product>,IEnumerable<ProductDto>>(productList);
+        return new ServiceResult<IEnumerable<ProductDto>>() { Data = result };
     }
     public async Task<ServiceResult<ProductDto>> GetProductByIdAsync(int id)
     {

@@ -1,4 +1,4 @@
-namespace Services.Products;
+namespace Services.Products.Create;
 
 public record CreateProductResponse
 {

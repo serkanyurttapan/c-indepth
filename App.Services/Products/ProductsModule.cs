@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
+using Services.Products.Create;
+using Services.Products.Update;
 
 namespace Services.Products;
 

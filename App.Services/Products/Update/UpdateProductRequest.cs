@@ -1,4 +1,4 @@
-namespace Services.Products;
+namespace Services.Products.Update;
 public class UpdateProductRequest
 {
     public int Id { get; set; }

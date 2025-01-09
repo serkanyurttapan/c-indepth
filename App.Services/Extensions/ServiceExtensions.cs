@@ -1,4 +1,5 @@
 using System.Reflection;
+using AutoMapper;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using Services.Products;
@@ -13,6 +14,7 @@ public static class ServiceExtensions
         services.AddScoped<IProductService, ProductService>();
         services.AddFluentValidationAutoValidation();
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+        services.AddAutoMapper(Assembly.GetExecutingAssembly());
         return services;
     }
 }
