@@ -5,7 +5,6 @@ namespace Services
     //DP: Result Pattern
     public class ServiceResult<T> where T : class
     {
-        
         public T? Data { get; set; }
 
         public bool IsSuccess()
@@ -34,7 +33,8 @@ namespace Services
             return new ServiceResult<T> { StatusCode = httpStatusCode };
         }
 
-        public static ServiceResult<T> Fail(List<string> errors, HttpStatusCode httpStatusCode = HttpStatusCode.BadRequest)
+        public static ServiceResult<T> Fail(List<string> errors,
+            HttpStatusCode httpStatusCode = HttpStatusCode.BadRequest)
         {
             return new ServiceResult<T> { Errors = errors, StatusCode = httpStatusCode };
         }
@@ -44,9 +44,9 @@ namespace Services
             return new ServiceResult<T> { Message = error, StatusCode = httpStatusCode };
         }
     }
+
     public class ServiceResult
     {
-        
         public bool IsSuccess()
         {
             return Errors == null || Errors.Count == 0 || !string.IsNullOrEmpty(Message);
@@ -68,14 +68,21 @@ namespace Services
             return new ServiceResult { StatusCode = httpStatusCode };
         }
 
-        public static ServiceResult FailNoContent(List<string> errors, HttpStatusCode httpStatusCode = HttpStatusCode.BadRequest)
+        public static ServiceResult FailNoContent(List<string> errors,
+            HttpStatusCode httpStatusCode = HttpStatusCode.BadRequest)
         {
             return new ServiceResult { Errors = errors, StatusCode = httpStatusCode };
         }
 
-        public static ServiceResult FailNoContent(string error, HttpStatusCode httpStatusCode = HttpStatusCode.BadRequest)
+        public static ServiceResult FailNoContent(string error,
+            HttpStatusCode httpStatusCode = HttpStatusCode.BadRequest)
         {
             return new ServiceResult { Message = error, StatusCode = httpStatusCode };
+        }
+
+        public static ServiceResult Fail(string error, HttpStatusCode httpStatusCode = HttpStatusCode.BadRequest)
+        {
+            return new ServiceResult { Errors = errors, Message = error, StatusCode = httpStatusCode };
         }
     }
 }
