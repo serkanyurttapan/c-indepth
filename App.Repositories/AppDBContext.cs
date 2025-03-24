@@ -14,4 +14,5 @@ public class AppDBContext : DbContext
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDBContext).Assembly);
         base.OnModelCreating(modelBuilder);
     }
+    
 }
